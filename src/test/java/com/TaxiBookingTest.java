@@ -62,4 +62,16 @@ public class TaxiBookingTest {
         Assert.assertEquals(expectedTicket, ticket);
     }
 
+    @Test
+    public void testForNasikToPune() {
+        final String ticket = taxiBookingService.bookTaxi( "NASIK","PUNE", 2);
+        String expectedTicket = "Taxi Ticket" + "\n"
+                + "-----------" + "\n"
+                + "Source: NASIK" + "\n"
+                + "Destination: PUNE" + "\n"
+                + "Kms: 200" + "\n"
+                + "No. of travellers = 2" + "\n"
+                + "Total = 2500 INR";
+        Assert.assertEquals(expectedTicket, ticket);
+    }
 }
