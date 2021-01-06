@@ -1,0 +1,7 @@
+Taxi Ticket
+-----------
+Source: #{source}
+Destination: #{destination}
+Kms: #{distance}
+No. of travellers = #{noOfTravellers}
+Total = #{fare} INR
